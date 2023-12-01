@@ -1,0 +1,12 @@
+<launch>
+
+  <param name="tum_file_path" value="/usr/myhome/KeyFrameTrajectory.txt"/>
+
+  <!-- run read_tum_path -->
+  <node name="read_tum_path" pkg="showpath_tum" type="read_tum_path" output="screen"/>
+
+  <!-- run rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find showpath_tum)/launch/showpath_tum.rviz" output="screen"/>
+
+</launch>
+
