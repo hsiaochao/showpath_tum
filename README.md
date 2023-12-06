@@ -10,21 +10,18 @@ Description Using ROS system and C++language, refer to CMakeLists.txt for config
 
 #### Installation and Compilation
 
-Download this source code into the src folder of your catkin worksapce:
+Download this source code into the src folder of your catkin worksapce and catkin_make:
 ```
-$ cd catkin_ws/src
-$  git clone https://github.com/hsiaochao/showpath_tum
-```
-Compile the project:
-```
-$ cd catkin_ws
-$ source devel/setup.bash
-$ catkin_make
+cd ~/catkin_ws/src
+git clone https://github.com/hsiaochao/showpath_tum
+cd ../
+catkin_make
+source ~/catkin_ws/devel/setup.bash
 ```
 #### How to use it
 Start the project on a terminal:
 ```
-$ roslaunch showpath_tum showpath01.launch
+roslaunch showpath_tum showpath01.launch
 ```
 You can complete the playback trajectory in rviz, and the effect is:
 #### Participate in contributions
